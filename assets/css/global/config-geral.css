@@ -138,3 +138,62 @@ h4 {
 .mobile-hide {
   display: none;
 }
+
+.object-cover img {
+  position: absolute;
+  object-fit: cover;
+  width: var(--percent100);
+  height: var(--percent100);
+  display: block;
+}
+
+.products .media {
+  position: relative;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.primary-button, .secondary-button, .light-button {
+  font-size: var(--font-small);
+  padding: 0.9em 2em;
+  height: auto;
+  width: fit-content;
+  border-radius: 2em;
+  transition: var(--trans-background-color);
+}
+
+.primary-button {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.primary-button:hover {
+  background-color: var(--dark-color);
+}
+
+.secondary-button {
+  background-color: var(--secondary-dark-color);
+  color: var(--white-color);
+}
+
+.secondary-button:hover {
+  background-color: var(--light-bg-color);
+  color: var(--secondary-color);
+}
+
+.light-button {
+  background-color: var(--light-bg-color);
+  color: var(--white-color);
+}
+
+.view-all {
+  font-size: var(--font-small);
+  display: flex;
+  gap: 1em;
+  transition: var(--trans-color);
+}
+
+.mini-text {
+  font-size: var(--font-smaller);
+  color: var(--light-text-color);
+}
