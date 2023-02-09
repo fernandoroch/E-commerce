@@ -1,4 +1,6 @@
 @import './global/config-geral.css';
 @import './utilitarios.css';
-@import './global/header.css';
+@import './header.css';
+@import './main-slider.css';
+@import './products.css';
 @import './global/footer.css';
