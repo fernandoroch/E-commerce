@@ -35,10 +35,7 @@
   border-radius: 4px;
 }
 
-.text-content :where(h2,h3) span:first-child {
-  font-weight: var(--fw3);
-  columns: var(--light-text-color);
-} 
+
 
 .text-content :where(h2,h3) span:last-child {
   color: var(--secondary-dark-color);
