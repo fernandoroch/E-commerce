@@ -41,4 +41,18 @@ export default function headerMenu() {
   closeButton.addEventListener('click', () => {
     addClass.classList.remove('showmenu')
   })
+
+  /*   show search bottom */
+
+  const searchButtom = document.querySelector('.t-search')
+  const tClose = document.querySelector('.search-close')
+  const ShowClass = document.querySelector('.site')
+
+  searchButtom.addEventListener('click', () => {
+    ShowClass.classList.toggle('show-search')
+  })
+
+  tClose.addEventListener('click', () => {
+    ShowClass.classList.remove('show-search')
+  })
 }
