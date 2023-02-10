@@ -42,7 +42,16 @@ export default function headerMenu() {
     addClass.classList.remove('showmenu')
   })
 
-  /*   show search bottom */
+  /*     show menu department    */
+
+  const dptButtom = document.querySelector('.dpt-cat .dpt-trigger')
+  const dptClass = document.querySelector('.site')
+
+  dptButtom.addEventListener('click', () => {
+    dptClass.classList.toggle('show-dpt')
+  })
+
+  /*     show search bottom       */
 
   const searchButtom = document.querySelector('.t-search')
   const tClose = document.querySelector('.search-close')

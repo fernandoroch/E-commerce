@@ -202,3 +202,22 @@ h4 {
   font-weight: var(--fw3);
   color: var(--light-text-color);
 } 
+
+.page-home .dpt-cat .dpt-trigger, .dpt-trigger .ri-close-line,.show-dpt .dpt-trigger .ri-menu-3-line {
+  display: none;
+}
+
+.page-single .dpt-cat .dpt-trigger,.show-dpt .dpt-trigger .ri-close-line  {
+  display: block;
+}
+
+@media screen and (min-width: 992px) {
+  #page:not(.page-home) .dpt-menu {
+    display: none;
+  }
+
+  #page.show-dpt .dpt-menu {
+    display: block;
+  }
+}
+
