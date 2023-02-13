@@ -532,9 +532,7 @@ form.search button:hover {
   transition: max-height .3s cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 
-.off-canvas .expand > :where(ul, .mega) {
-  max-height: 2000px;
-}
+
 
 .off-canvas .thetop-nav ul, .off-canvas nav > ul {
   flex-direction: column;
@@ -581,5 +579,9 @@ form.search button:hover {
   border: 1px solid var(--border-color);
   line-height: 16px;
   margin: 0 0.5em 0.5em 0;
+}
+
+  .has-child a.expand ~ :where(ul, .mega) {
+  max-height: 2000px;
 }
 

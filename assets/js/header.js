@@ -20,7 +20,7 @@ export default function headerMenu() {
   const closeButton = document.querySelector('.t-close')
   const addClass = document.querySelector('.site')
   
-  const subMenu = document.querySelectorAll('.has-child')
+  const subMenu = document.querySelectorAll('.current')
   
   const toggleMenu = (menu) => {
     subMenu.forEach((item) => {
@@ -28,6 +28,7 @@ export default function headerMenu() {
         item.classList.remove('expand')
       }
     })
+    console.log('ok');
     menu.classList.toggle('expand')
   }
   
