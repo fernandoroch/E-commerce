@@ -5,3 +5,61 @@
   flex-shrink: 0;
   margin-right: 1em;
 }
+
+.single-cart .page-tittle {
+  margin-bottom: 3em;
+}
+
+.products.cart form {
+  width: var(--percent100);
+}
+
+.products.cart table thead th {
+  vertical-align: middle;
+  background-color: var(--light-bg-color);
+}
+
+.products.cart table :where(th, td) {
+  padding: 2em 1em;
+  text-align: center;
+}
+
+.products.cart table tbody td:first-child {
+  padding-left: 0;
+}
+
+.products.cart table td :where(.content, .qty-control, p) {
+  margin: 0;
+  padding: 0;
+}
+
+.products.cart .qty-control :where(button, input) {
+  width: 32px;
+  height: 32px;
+  padding: 0.25em;
+  text-align: center;
+  outline: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+.products.cart .qty-control button {
+  cursor: pointer;
+}
+
+.products.cart table tbody tr {
+  border-bottom: 1px solid var(--border-color);
+}
+
+
+@media screen and (min-width:992px){
+  .products.cart .form-cart {
+    width: 66%;
+  }
+
+  .products.cart .cart-summary {
+    width: 34%;
+    padding-left: 2.5em;
+    margin-top: 0;
+  }
+}
